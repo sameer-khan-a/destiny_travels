@@ -7,6 +7,6 @@ const destinationSchema = new mongoose.Schema({
     rating: Number
 })
 
-const Destination = new mongoose.model("Destination", destinationSchema);
+// Destination Model
 
 export default Destination;
