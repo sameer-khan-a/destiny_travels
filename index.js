@@ -26,27 +26,9 @@ await mongoose.connect(process.env.MONGO_URI).then(() => {
 // await Ooty.save().then(()=> {
 //     console.log("Ooty saved");
 // });
-// // insertMany
-// const destinations = await Destination.insertMany([
-//     {
-//         name: "Bijapur",
-//         state: "Karnataka",
-//         distance: 1000,
-//         rating: 4
-//     },
-//     {
-//         name: "Davangere",
-//         state: "Karnataka",
-//         distance: 1000,
-//         rating: 4
-//     },
-//     {
-//         name: "Agra",
-//         state: "Uttar Pradesh",
-//         distance: 1000,
-//         rating: 4
-//     }
-// ])
+
+// insertMany (insert 6 destinations at once)
+
 const result = await Destination.exists({
     name: "Jaipur"
 })
