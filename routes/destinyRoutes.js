@@ -12,8 +12,7 @@ const router = express.Router();
 router.get("/destinations", showAllDestinations);
 router.get("/destinations/:id", showDestinationById);
 router.post("/destinations", createDestination);
-router.put("/destinations/:id", updateDestination);
-router.delete("/destinations/:id", deleteDestination);
+// Two Missing routes
 
 export default router;
 
